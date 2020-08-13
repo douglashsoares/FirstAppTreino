@@ -1,4 +1,4 @@
-package com.example.firstapptreino
+package com.example.firstapptreino.Alerts
 
 import android.content.DialogInterface
 import androidx.appcompat.app.AppCompatActivity
@@ -9,6 +9,7 @@ import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
 import androidx.appcompat.app.AlertDialog
+import com.example.firstapptreino.R
 import kotlinx.android.synthetic.main.activity_alert.*
 
 class AlertActivity : AppCompatActivity() {

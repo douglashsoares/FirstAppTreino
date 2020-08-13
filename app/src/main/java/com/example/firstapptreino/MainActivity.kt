@@ -3,11 +3,11 @@ package com.example.firstapptreino
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.util.Log
 import android.view.Menu
 import android.view.MenuInflater
 import android.view.MenuItem
 import android.widget.Toast
+import com.example.firstapptreino.Alerts.AlertActivity
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
@@ -71,7 +71,8 @@ class MainActivity : AppCompatActivity() {
 
         btnFluxoAlerta.setOnClickListener {
 
-            val intent = Intent (this,AlertActivity::class.java)
+            val intent = Intent (this,
+                AlertActivity::class.java)
             startActivity(intent)
         }
 

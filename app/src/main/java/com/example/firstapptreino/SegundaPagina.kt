@@ -3,6 +3,7 @@ package com.example.firstapptreino
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.example.firstapptreino.ListView.ListViewActivity
 import kotlinx.android.synthetic.main.activity_segunda_pagina.*
 
 class SegundaPagina : AppCompatActivity() {

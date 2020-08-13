@@ -9,10 +9,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ListViewActivity"></activity>
-        <activity android:name=".DemoAlert" />
+        <activity android:name=".ListView.ListViewActivity"></activity>
+        <activity android:name=".Alerts.DemoAlert" />
         <activity android:name=".SegundaPagina" />
-        <activity android:name=".AlertActivity" />
+        <activity android:name=".Alerts.AlertActivity" />
         <activity android:name=".RatingBarActivity" />
         <activity android:name=".SeekBarActivity" />
         <activity android:name=".VisibilidadeActivity" />
@@ -26,7 +26,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".MenuDemo"></activity>
+        <activity android:name=".Menu.MenuDemo"></activity>
     </application>
 
 </manifest>
