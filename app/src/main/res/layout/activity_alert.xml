@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AlertActivity">
+
+    <TextView
+        android:id="@+id/txtContaAlertLogin"
+        android:text="Nome:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btnContaAlertLogin"
+        app:layout_constraintBottom_toTopOf="@+id/txtContaAlertSenha"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/txtContaAlertSenha"
+        android:text="Senha:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/txtContaAlertLogin"
+        app:layout_constraintEnd_toStartOf="@+id/btnContaAlertaSenha"
+        app:layout_constraintBottom_toTopOf="@+id/txtContaAlertSaldo"
+        app:layout_constraintStart_toStartOf="parent"
+
+        />
+
+    <TextView
+        android:id="@+id/txtContaAlertSaldo"
+        android:text="Saldo:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/txtContaAlertSenha"
+        app:layout_constraintEnd_toStartOf="@+id/btnContaAlertaSaldo"
+        app:layout_constraintBottom_toTopOf="@+id/txtContaAlertSaldo2"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+    <TextView
+        android:id="@+id/txtContaAlertSaldo2"
+        android:text="Saldo 2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/txtContaAlertSaldo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btnContaAlertaSaldo2"
+        />
+
+    <Button
+        android:id="@+id/btnContaAlertLogin"
+        android:text="SHOW"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/txtContaAlertLogin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/btnContaAlertaSenha"
+        />
+
+    <Button
+        android:id="@+id/btnContaAlertaSenha"
+        android:text="SHOW"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/btnContaAlertLogin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/btnContaAlertaSaldo"
+        app:layout_constraintStart_toEndOf="@id/txtContaAlertSenha"
+        />
+
+    <Button
+        android:id="@+id/btnContaAlertaSaldo"
+        android:text="SHOW"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/btnContaAlertaSenha"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/txtContaAlertSaldo"
+        app:layout_constraintBottom_toTopOf="@+id/btnContaAlertaSaldo2"
+        />
+    <Button
+        android:id="@+id/btnContaAlertaSaldo2"
+        android:text="SHOW"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/btnContaAlertaSaldo"
+        app:layout_constraintStart_toEndOf="@+id/txtContaAlertSaldo2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+
+        />
+</androidx.constraintlayout.widget.ConstraintLayout>

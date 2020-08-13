@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+
+    <Button
+        android:id="@+id/btnFluxoNumero"
+        android:text="Adcionar Numero"
+        android:layout_marginEnd="20dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btnFluxoRatingBar"
+        app:layout_constraintBottom_toTopOf="@+id/btnFluxoCadastro"
+        />
+
+    <Button
+        android:id="@+id/btnFluxoRatingBar"
+        android:layout_marginStart="20dp"
+        android:text="Rating Bar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnFluxoNumero"
+        app:layout_constraintBottom_toTopOf="@+id/btnFluxoAlerta"
+        />
+
+    <Button
+        android:id="@+id/btnFluxoCadastro"
+        android:text="Cadastro"
+        android:layout_marginEnd="20dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/btnFluxoNumero"
+        app:layout_constraintEnd_toStartOf="@+id/btnFluxoAlerta"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/btnFluxoVisibilidade"
+        />
+
+    <Button
+        android:id="@+id/btnFluxoAlerta"
+        android:text="Alert"
+        android:layout_marginStart="20dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/btnFluxoRatingBar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnFluxoCadastro"
+        app:layout_constraintBottom_toTopOf="@id/btnFluxoVisibilidade"
+        />
+
+    <Button
+        android:id="@+id/btnFluxoVisibilidade"
+        android:text="Visibilidade"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/btnFluxoCadastro"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/btnFluxoSeekBar"
+        />
+
+
+    <Button
+        android:id="@+id/btnFluxoSeekBar"
+        android:text="Cachoeiras"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/btnFluxoVisibilidade"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/btnFluxoMudarPagina"
+        />
+
+    <Button
+        android:id="@+id/btnFluxoMudarPagina"
+        android:text="Mudar Pagina"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/btnFluxoSeekBar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
